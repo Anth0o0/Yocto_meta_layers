@@ -1,17 +1,17 @@
 # Yocto_meta_layers
 
-Le but de ce TP est d'apprendre à utiliser Yocto, son système de recettes et de meta-layers.
+The goal of the project is to learn to use Yocto with their recipes and meta-layers.
 
-J'ai d'abord installé les paquets nécessaires pour utiliser Yocto, puis crée l'environnement de Yocto en ajoutant des recettes :
+I've install packages useful for Yocto, then create Yocto environment and ading recipes:
 ![2021-05-14_19-30](https://user-images.githubusercontent.com/72147223/118409199-7be03c80-b689-11eb-807b-0b7fdcc09cce.png)
 
-pour obtenir un fichier Build comme ceci: 
+to get Build file like this :
 ![2021-05-13_18-30](https://user-images.githubusercontent.com/72147223/118409145-50f5e880-b689-11eb-894f-44af49130eb9.png)
 
-J'ai crée un nouveau dossier nommé recipes-ynov-rpi4/images où j'ai crée un fichier hello.c et un fichier hello-world_1.0.bb.
+I created new folder nammed recipes-ynov-rpi4/images where i created hello.c file and hello-world_1.0.bb.
 
-Pour lancer le build exectuez la commande suivante : bitbake build ynov-rpi-image.bb
+To run build configuration : bitbake build ynov-rpi-image.bb
 
-Puis, uploader l'image sur carte micro SD vers la Raspberry Pi
+Then, upload the image on a micro SD card to the Raspberrry PI.
 dd if=MonImage.rootfs.rpi-sdimg of=/dev/sdb bs=4M 
  
