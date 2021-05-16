@@ -8,7 +8,8 @@ I've installed packages useful for Yocto, then created Yocto environment and add
 to get Build file like this :
 ![2021-05-13_18-30](https://user-images.githubusercontent.com/72147223/118409145-50f5e880-b689-11eb-894f-44af49130eb9.png)
 
-I created new folder nammed recipes-ynov-rpi4/images where I created hello.c file and hello-world_1.0.bb.
+I created new folder nammed recipes-ynov-rpi4/images where I created hello.c file and hello-world_1.0.bb :
+
 
 To run build configuration : bitbake build ynov-rpi-image.bb
 
